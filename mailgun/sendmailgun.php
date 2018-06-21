@@ -1,6 +1,8 @@
 <?php
-
 # Allows the use of mailgun via CURL instead of importing another library
+# Ron Egli - Sendmailgun.php
+# Github.com/smugzombie
+
 function sendmailgun($to,$toname,$mailfromnane,$mailfrom,$subject,$html,$text,$tag,$replyto,$cc="",$attachments=""){
     define('MAILGUN_URL', 'https://api.mailgun.net/v3/<YOUR DOMAIN>');
     define('MAILGUN_KEY', 'key-<YOUR KEY>');
